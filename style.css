@@ -1,0 +1,52 @@
+body {
+    background-image: linear-gradient(to left, gray, pink);
+}
+.halaman {
+    width: 100%;
+    margin: auto;
+}
+nav {
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+    text-align: center;
+    background-color: black;
+}
+nav a {
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    line-height: 60px;
+    display: block;
+}
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+nav ul ul {
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+    top: 60px;
+    position: absolute;
+}
+nav ul ul li {
+    display: list-item;
+    width: 180px;
+    float: none;
+    position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 180px;
+}
